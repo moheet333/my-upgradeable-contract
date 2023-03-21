@@ -1,0 +1,148 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xEDD33F4dfc420Dded18b822388262b46cCCE793C",
+    "txHash": "0xa46b0db1f81c62fa92715c4ee5d46744b243c91dfd32ad1b26586689c399f99a"
+  },
+  "proxies": [
+    {
+      "address": "0x4273072be0A43243D138a26aFaA01f907E0e2495",
+      "txHash": "0x760bbfe44475d3dadc1583acacc9b8336b3e84808ab210819b344b7b5de2ceee",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "041666f7011c9b5a8bf6080dc0792fc660df15767181dcdce8b38677929c9b6e": {
+      "address": "0xbe9A5066860D5F3A3B129d5E1529E14cFDd28b13",
+      "txHash": "0x8ac4d9d794b76b948c839607a10f4db4df6ab46777807fbd069f8bfeaa054871",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "numSodas",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "VendingMachineV1",
+            "src": "contracts/VendingMachineV1.sol:7"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "VendingMachineV1",
+            "src": "contracts/VendingMachineV1.sol:8"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0785b8793eb68a9ddb243e6c495223f0fd254ec0190f499cad6a90d280bfea32": {
+      "address": "0xA19dcb6025935e3F88Cf14D590bF45FC7321cec0",
+      "txHash": "0x5099b63d3213fc10e0c0c27ac521d582c61928a2ce789f9114b80630ac7b5de1",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "numSodas",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "VendingMachineV2",
+            "src": "contracts/VendingMachineV2.sol:9"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "VendingMachineV2",
+            "src": "contracts/VendingMachineV2.sol:10"
+          },
+          {
+            "label": "userToPurchases",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VendingMachineV2",
+            "src": "contracts/VendingMachineV2.sol:11"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
